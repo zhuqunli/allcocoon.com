@@ -39,7 +39,6 @@ export default {
       menus: this.navData.menus,
       menuname: this.navData.menuname,
       menuicon: this.navData.menuicon,
-      fullWidth: true,
       displaymenu: false
     }
   },
@@ -153,7 +152,7 @@ export default {
       line-height: 60px;
       font-weight:500;
       color:rgba(51,51,51,1);
-      margin: 0 15px;
+      margin: 0 10px;
     }
   }
 
