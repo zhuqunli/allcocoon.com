@@ -16,6 +16,9 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
+body {
+  background: rgba(240 240 240 1);
+}
 
 *,
 *:before,

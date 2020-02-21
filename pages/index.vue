@@ -1,63 +1,51 @@
 <template>
   <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        allcocoon.com
-      </h1>
-      <h2 class="subtitle">
-        Welcome to the iView + Nuxt.js template
-      </h2>
-      <div class="links">
-        <Button type="primary" target="_blank" to="https://nuxtjs.org/">
-          Documentation
-        </Button>
-        <Button target="_blank" to="https://github.com/nuxt/nuxt.js">
-          GitHub
-        </Button>
-        <Button target="_blank" to="https://www.iviewui.com/">
-          iView
-        </Button>
-      </div>
-    </div>
+    <newnav :nav-data="navData" />
+
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import Newnav from '~/components/Newnav.vue'
 export default {
+  data: function() {
+    return {
+      navData: {
+        logo: "/favicon.ico",
+        sitename: "营财宝",
+        menus: [
+          { id: 1, text: "公司注册" },
+          { id: 2, text: "代理记账" },
+          { id: 3, text: "商标服务" },
+          { id: 4, text: "关于我们" }
+        ],
+        menuicon: "/menu2x.png",
+        menuname: "菜单"
+      }
+    }
+  },
   components: {
-    Logo
+    Newnav
   }
 }
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+<style scoped>
+/* .container {
+  width: 1920px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-.links {
-  padding-top: 15px;
-}
+@media (max-width: 900px) {
+  .container {
+    width: 750px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+} */
+
 </style>

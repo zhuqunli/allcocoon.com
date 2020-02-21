@@ -5,3 +5,14 @@
 The components directory contains your Vue.js Components.
 
 _Nuxt.js doesn't supercharge these components._
+
+
+1.Navbar.Vue
+ - 自适应带menu 菜单按钮的Navbar
+ - 依赖：static/menu2x.png
+        static/close.png
+ - 需要导入时传入props {navData}
+
+2. Newnav.Vue
+  - 可选导航菜单置于底部，类似手机app菜单形式
+  - 待完善加入icon；
