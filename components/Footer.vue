@@ -69,7 +69,7 @@ export default {
   width: 60%;
   display: flex;
   flex-direction: column;
-  margin: auto 0;
+  margin: auto 30px;
 }
 .right {
   width: 40%;
