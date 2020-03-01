@@ -73,6 +73,7 @@ export default {
     flex-wrap: nowrap;
     line-height: 85px;
     justify-content: space-between;
+    box-shadow: 0 0 1px black;
   }
   .navfullwidth {
     width: 1920px;

@@ -47,6 +47,7 @@ export default {
   background: #fff1f1;
   position: fixed;
   bottom: 0;
+  box-shadow: 0 0 1px black;
 }
 .container {
   width: 1920px;
