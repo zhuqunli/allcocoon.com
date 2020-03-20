@@ -37,7 +37,7 @@ export default {
         ],
         sitecopys: {
           company: "皆茧科技有限公司",
-          icp: "沪ICP备 19045206号-1"
+          icp: "沪ICP备 19045206号-1"  // suzhou-icp: 苏ICP备 19031935号-1
         }
 
       }
