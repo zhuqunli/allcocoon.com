@@ -30,7 +30,7 @@
 
 <script>
 export default {
-  name: "navbar",
+  name: "Navbar",
   props: {
     navData: Object
 
@@ -126,25 +126,26 @@ export default {
   .mobilemenu {
     display: none;
   }
-  @media (max-width:900px) {
-    .menuicon {
-      display: block;
-    }
-    .fullwidthmenus {
-      display: none;
-    }
-    .mobilemenu {
-      background: #fff1f1;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      width: 100%;
-      position: fixed;
-      top: 75px;
-      z-index: 900;
-    }
+
+@media (max-width:900px) {
+  .menuicon {
+    display: block;
   }
+  .fullwidthmenus {
+    display: none;
+  }
+  .mobilemenu {
+    background: #fff1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 75px;
+    z-index: 1000;
+  }
+}
 
   .mobilemenus-enter-active,
   .mobilemenus-leave-active {

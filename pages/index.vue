@@ -1,7 +1,7 @@
 <template>
-
   <div class="container">
-    <newnav :nav-data="navData" />
+    <navbar :nav-data="navData" />
+    <!-- <newnav :nav-data="navData" /> -->
     <foot :footer-data="footerData" />
   </div>
 </template>
@@ -9,6 +9,7 @@
 <script>
 import Newnav from '~/components/Newnav.vue'
 import Foot from '~/components/Footer.vue'
+import Navbar from '~/components/Navbar.vue'
 export default {
   data: function() {
     return {
@@ -45,7 +46,8 @@ export default {
   },
   components: {
     Newnav,
-    Foot
+    Foot,
+    Navbar
   }
 }
 </script>
